@@ -53,7 +53,7 @@ Binary:
 The bytecode output demonstrates a notable size reduction when the `--no-cbor-metadata` option is used, thereby reducing gas costs significantly at deployment.
 
 
-By default, 51 bytes of metadata are appended. Removing these bytes can save approximately 10,200 gas during deployment. However, this must be balanced against the need for contract verification which relies on this metadata. It is not always ideal though as it can affect smart contract verification. Instead, developers can mine for code comments that make the IPFS hash that gets appendedhave more zeros in it.
+By default, 51 bytes of metadata are appended. Removing these bytes can save approximately 10,200 gas during deployment. However, this must be balanced against the need for contract verification which relies on this metadata. It is not always ideal though as it can affect smart contract verification. Instead, developers can mine for code comments that make the IPFS hash that gets appended have more zeros in it.
 
 
 **Recommendations for Developers**
