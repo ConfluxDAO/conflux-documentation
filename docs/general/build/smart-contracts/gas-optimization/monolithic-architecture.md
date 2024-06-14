@@ -2,7 +2,7 @@
 displayed_sidebar: generalSidebar
 ---
 
-# Monolithic Contract Architecture for Gas Optimization
+# Use Monolithic Contract Architecture
 
 This tutorial explores how making the architecture of your smart contracts monolithic, rather than having several contracts that communicate with each other, can result in significant gas savings. Inter-contract calls can be expensive, and by consolidating logic into a single contract, you can avoid these costs, albeit with some trade-offs in terms of complexity and modularity.
 
@@ -73,10 +73,4 @@ In the optimized monolithic version, the `MonolithicContract` handles both setti
 
 **Recommendations for Gas Optimization**
 
-🌟 Consolidate logic into fewer contracts to reduce inter-contract call overhead. Aim to implement most of your functionalities within a single contract where feasible.
-
-🌟 Carefully evaluate the trade-offs between maintainability and gas costs. In some cases, the benefits of reduced gas costs might outweigh the drawbacks of increased complexity.
-
-🌟 Use inheritance and library patterns to manage complexity while still keeping the contract monolithic.
-
-By adopting a monolithic contract architecture, you can achieve significant gas savings, making your smart contracts more efficient and cost-effective.
+🌟 Consolidate logic into fewer contracts to reduce inter-contract call overhead. Aim to implement most of your functionalities within a single contract where feasible. But you need to carefully evaluate the trade-offs between maintainability and gas costs. 
